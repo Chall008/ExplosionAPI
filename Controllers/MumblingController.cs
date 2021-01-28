@@ -19,12 +19,10 @@ namespace ExplosionAPI.Controllers
         // IF we’re at anything that is not the last letter append a “-”
         // Return the answer/result
 
-    }
-    public class Accumul
-    {
-        public static String Accum(string s)
+        [HttpGet]
+        public string Mumbling(string s)
         {
-            var answer = "";
+            string answer = "";
 
             for (var index = 0; index < s.Length; index++)
             {
@@ -51,7 +49,10 @@ namespace ExplosionAPI.Controllers
 
             return answer;
 
+
+
         }
+
 
     }
 }
