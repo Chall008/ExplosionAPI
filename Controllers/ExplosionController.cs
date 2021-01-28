@@ -12,15 +12,15 @@ namespace ExplosionAPI.Controllers
     public class ExplosionController : ControllerBase
     {
         [HttpGet]
-        public string Explode(string input)
+        public string Explode(string who)
         {
 
             var answer = "";
 
             // for each letter in the string given
-            for (int index = 0; index < input.Length; index++)
+            for (int index = 0; index < who.Length; index++)
             {
-                var letter = input[index];
+                var letter = who[index];
 
                 //   if the letter is a '1' then
                 if (letter == '1')
